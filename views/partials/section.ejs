@@ -1,0 +1,9 @@
+<h2><%= category[0].toUpperCase()+category.slice(1) %>:</h2>
+
+<% for (const item of menu) {
+    if (item.category === category) {%>
+<hr width="50%" align="left" color="black">
+<h3><%= item.name %></h3>
+<p>$<%= item.price %> <%= "⭐".repeat(item.rating) + "☆".repeat(5-item.rating)%></p>
+<p><%= item.details %></p>
+<% }}; %>

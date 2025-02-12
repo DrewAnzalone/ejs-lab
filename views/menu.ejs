@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+</head>
+
+<body>
+  <%- include('./partials/nav') %>
+  <h1>Full Menu</h1>
+
+  <%- include('./partials/section', {menu, category: "mains"}) %>
+
+  <hr size="5" width="50%" align="left" color="black">
+  <%- include('./partials/section', {menu, category: "desserts"}) %>
+
+  <hr size="5" width="50%" align="left" color="black">
+  <%- include('./partials/section', {menu, category: "sides"}) %>
+</body>
+
+</html>
